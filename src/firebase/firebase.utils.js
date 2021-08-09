@@ -17,7 +17,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   const snapshot = await userRef.get()
   if (!snapshot.exists) {
     const { displayName, email } = userAuth
-    //for google sign in userAuth.displayName value is not null
+    //for google sign in: userAuth.displayName value is not null
     const createdAt = new Date()
     try {
       await userRef.set({

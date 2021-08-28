@@ -5,7 +5,7 @@ import {
   CollectionItemContainer,
   AddButton,
   BackgroundImage,
-  CollectionsFooterContainer,
+  CollectionFooterContainer,
   NameContainer,
   PriceContainer,
 } from './collection-item.styles.jsx'
@@ -17,10 +17,10 @@ const CollectionItem = ({ item, addItem }) => {
   return (
     <CollectionItemContainer>
       <BackgroundImage className='image' imageUrl={imageUrl} />
-      <CollectionsFooterContainer>
+      <CollectionFooterContainer>
         <NameContainer>{name}</NameContainer>
         <PriceContainer>{price}</PriceContainer>
-      </CollectionsFooterContainer>
+      </CollectionFooterContainer>
       <AddButton
         className='custom-button'
         inverted

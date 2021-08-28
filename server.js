@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY)
 
-const app = express()
+const appa = express()
 const port = process.env.PORT || 5001
 
 app.use(express.json())
